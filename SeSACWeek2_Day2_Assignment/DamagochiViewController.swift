@@ -57,7 +57,11 @@ class DamagochiViewController: UIViewController {
         borderWater.backgroundColor = UIColor.systemGray.cgColor
         waterCountTextF.layer.addSublayer(borderWater)
         waterCountTextF.textAlignment = .center
-
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
+        storyLabel.textColor = .black
+        riceCountTextF.textColor = .black
+        waterCountTextF.textColor = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {
