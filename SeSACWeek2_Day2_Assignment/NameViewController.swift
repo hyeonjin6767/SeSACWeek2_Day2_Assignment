@@ -24,7 +24,11 @@ class NameViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        nameNaviItem.title = "\(UserDefaults.standard.string(forKey: "대장이름")!)님의 다마고치"
+        if let damaName = UserDefaults.standard.string(forKey: "대장이름") {
+            nameNaviItem.title = "\(damaName)님의 다마고치"
+        } else {
+            nameNaviItem.title = "대장님의 다마고치"
+        }
     }
     
     @IBAction func nameTextFClicked(_ sender: UITextField) {
