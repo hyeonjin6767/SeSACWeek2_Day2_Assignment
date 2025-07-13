@@ -37,7 +37,7 @@ class ShoppingTableViewController: UITableViewController {
         shoppinglistTextF.textColor = .systemGray
         shoppinglistAddButton.backgroundColor = .systemGray5
         shoppinglistAddButton.layer.cornerRadius = 15
-        shoppinglistTextF.text = "무엇을 구매하실 건가요?"
+        shoppinglistTextF.placeholder = "무엇을 구매하실 건가요?"
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
